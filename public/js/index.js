@@ -75,7 +75,7 @@ const loadData = (users) => {
                         <td>${user.name}</td>
                         <td>${user.phone}</td>
                         <td>${user.email}</td>
-                        <td>
+                        <td class="actions">
                             <button onclick="populateForm(${user.id})">Update</button>
                             <button onclick="deleteUser(${user.id})">Delete</button>
                         </td>

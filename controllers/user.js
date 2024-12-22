@@ -34,3 +34,37 @@ exports.getUserById = async (req, res, next) => {
         res.status(500).json({ error: 'Failed to fetch user' });
     }
 };
+
+exports.updateUser = async (req, res, next) => {
+    const userId = req.params.id;
+    const { name, phone, email } = req.body;
+    try {
+        const user = await User.findByPk(userId);
+        if (!user) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+        user.name = name;
+        user.phone = phone;
+        user.email = email;
+        await user.save();
+        res.json({ user });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Failed to update user' });
+    }
+};
+
+exports.deleteUser = async (req, res, next) => {
+    const userId = req.params.id;
+    try {
+        const user = await User.findByPk(userId);
+        if (!user) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+        await user.destroy();
+        res.json({ message: 'User deleted successfully' });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Failed to delete user' });
+    }
+}

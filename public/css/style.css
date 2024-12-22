@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,8 @@ body {
     min-height: 100vh;
 }
 
-h1, h3 {
+h1,
+h3 {
     padding: 10px 0px;
     color: white;
     text-align: center;
@@ -80,6 +81,14 @@ table {
     overflow-x: auto;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Add horizontal scrolling */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for better appearance */
+    
+}
+
 th,
 td {
     text-align: left;
@@ -122,13 +131,21 @@ footer {
     margin-top: 20px;
 }
 
+@media (min-width: 769px) {
+    .table-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     table {
         width: 100%;
     }
 
-    th, td {
+    th,
+    td {
         font-size: 12px;
         padding: 8px;
     }
@@ -153,7 +170,8 @@ footer {
         font-size: 14px;
     }
 
-    th, td {
+    th,
+    td {
         padding: 6px;
     }
 

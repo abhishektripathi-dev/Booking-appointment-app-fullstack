@@ -21,7 +21,7 @@ The **Booking Appointment App** is a web-based application designed to streamlin
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-repo/booking-appointment-app.git
+   git clone https://github.com/abhishektripathi-dev/Booking-appointment-app-fullstack.git
    cd booking-appointment-app
    ```
 

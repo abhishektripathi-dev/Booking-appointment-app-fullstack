@@ -94,8 +94,15 @@ setup
 ## Contributing
 Contributions are welcome! Feel free to submit a pull request or report issues.
 
+## Contributors
+
+### Abhishek Tripathi
+- **GitHub:** [github.com/abhishektripathi-dev](https://github.com/abhishektripathi-dev)
+- **LinkedIn:** [linkedin.com/in/imabhishek-tripathi](https://www.linkedin.com/in/imabhishek-tripathi/)
+- **LeetCode:** [leetcode.com/abhishektripathi-dev](https://leetcode.com/abhishektripathi-dev)
+
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. Created and maintained by Abhishek Tripathi. See the LICENSE file for more details.
 
 ## Acknowledgments
 - [Node.js](https://nodejs.org/)
